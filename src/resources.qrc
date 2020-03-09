@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/fontello.ttf</file>
+        <file>fonts/wqywmh.ttf</file>
+        <file>zh_CN.qm</file>
+        <file>images/key.ico</file>
+        <file>images/key.png</file>
+        <file>images/key.svg</file>
+        <file>qml/custom/ClipBoard.qml</file>
+        <file>qml/custom/MyLabel.qml</file>
+        <file>qml/custom/MyListModel.qml</file>
+        <file>qml/custom/MyPage.qml</file>
+        <file>qml/custom/MyTextField.qml</file>
+        <file>qml/custom/TipPopup.qml</file>
+        <file>qml/pages/AccountPage.qml</file>
+        <file>qml/pages/AddPage.qml</file>
+        <file>qml/pages/EditPage.qml</file>
+        <file>qml/pages/LandingPage.qml</file>
+        <file>qml/pages/MainPage.qml</file>
+        <file>qml/pages/SearchPage.qml</file>
+        <file>qml/pages/ViewPage.qml</file>
+        <file>qml/main.qml</file>
+        <file>qml/custom/Logic.qml</file>
+    </qresource>
+</RCC>
