@@ -1,6 +1,5 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import QtQuick.Dialogs 1.2
 import QtQuick.Layouts 1.12
 import QtQuick.Controls.Material 2.12
 import "../custom"
@@ -45,14 +44,42 @@ MyPage {
         }
     }
 
-    MessageDialog {
+    Popup {
         id: deleteWarningDialog
-        title: qsTr("Delete account?")
-        icon: StandardIcon.Warning
-        text: qsTr("Are you sure to delete your account?")
-        detailedText: qsTr("This operation CANNOT be undone. Be cautious about your decision!")
-        standardButtons: StandardButton.Yes | StandardButton.No
-        onYes: logic.deleteAccount()
+        anchors.centerIn: parent
+        leftPadding: 20; rightPadding: 20; topPadding: 20; bottomPadding: 0
+        modal: true
+        Column {
+            width: app.width-80
+            Label {
+                width: parent.width
+                text: qsTr("Are you sure to delete your account?")
+                wrapMode: Label.WrapAnywhere
+            }
+            Label {
+                width: parent.width
+                text: qsTr("This operation CANNOT be undone. Be cautious about your decision!")
+                Material.foreground: Material.Red
+                font.pixelSize: dp(16)
+                wrapMode: Label.WrapAnywhere
+            }
+            Row {
+                anchors.right: parent.right
+                spacing: 5
+                Button {
+                    text: qsTr("Cancel")
+                    flat: true
+                    Material.foreground: Material.Grey
+                    onClicked: deleteWarningDialog.close()
+                }
+                Button {
+                    text: qsTr("Confirm")
+                    flat: true
+                    Material.foreground: Material.Blue
+                    onClicked: logic.deleteAccount()
+                }
+            }
+        }
     }
 
     Component {

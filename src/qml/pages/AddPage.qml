@@ -41,13 +41,13 @@ MyPage {
                         width: parent.width
                         TextInput {
                             width: parent.width - dp(90)
-                            text: name
+                            text: a
                             color: dark ? "white" : "black"
                             clip: true
                             topPadding: dp(10)
                             bottomPadding: dp(10)
                             font { pixelSize: dp(20); bold: true }
-                            onTextEdited: name = text
+                            onTextEdited: a = text
                         }
                         Button {
                             width: dp(30)
@@ -55,7 +55,7 @@ MyPage {
                             font.family: "fontello"
                             flat: true
                             Material.foreground: Material.Blue
-                            onClicked: tmpModel.insert(index, {"name": "", "content": "", viewable: true})
+                            onClicked: tmpModel.insert(index, {"a": "", "b": "", "c": true})
                         }
                         Button {
                             width: dp(30)
@@ -63,7 +63,7 @@ MyPage {
                             font.family: "fontello"
                             flat: true
                             Material.foreground: Material.Blue
-                            onClicked: tmpModel.insert(index + 1, {"name": "", "content": "", viewable: true})
+                            onClicked: tmpModel.insert(index + 1, {"a": "", "b": "", "c": true})
                         }
                         Button {
                             width: dp(30)
@@ -76,14 +76,14 @@ MyPage {
                     }
                     MyTextField {
                         width: parent.width
-                        text: content
+                        text: b
                         passwordMode: true
-                        onPasswordVisibleChanged: viewable = passwordVisible
-                        onTextEdited: content = text
+                        onPasswordVisibleChanged: c = passwordVisible
+                        onTextEdited: b = text
                     }
                 }
             }
         }
     }
-    Component.onCompleted: tmpModel.init([{"name": qsTr("Username"), "content": "", "viewable": true}, {"name": qsTr("Password"), "content": "", "viewable": false}])
+    Component.onCompleted: tmpModel.init([{"a": qsTr("Username"), "b": "", "c": true}, {"a": qsTr("Password"), "b": "", "c": false}])
 }

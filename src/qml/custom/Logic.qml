@@ -30,7 +30,7 @@ Item {
         _.description = description
         // save modification in a copied object
         var copiedData = JSON.parse(JSON.stringify(myData))
-        copiedData.titles.push({"title": title, "description": description})
+        copiedData.titles.push({"a": title, "b": description})
         copiedData.fields.push(JSON.parse(tmpModel.toJson()))
         // commit modification
         backend.save(JSON.stringify(copiedData))
@@ -42,9 +42,9 @@ Item {
         _.titleModified = false
         _.descriptionModified = false
         _.fieldsModified = false
-        if(title !== titlesModel.get(_.entryIndex).title)
+        if(title !== titlesModel.get(_.entryIndex).a)
             _.titleModified = true
-        if(description !== titlesModel.get(_.entryIndex).description)
+        if(description !== titlesModel.get(_.entryIndex).b)
             _.descriptionModified = true
         if(fieldsModel.count !== tmpModel.count || fieldsModel.toJson() !== tmpModel.toJson())
             _.fieldsModified = true
@@ -55,9 +55,9 @@ Item {
             // save modification in a copied object
             var copiedData = JSON.parse(JSON.stringify(myData))
             if(_.titleModified)
-                copiedData.titles[_.entryIndex].title = title
+                copiedData.titles[_.entryIndex].a = title
             if(_.descriptionModified)
-                copiedData.titles[_.entryIndex].description = description
+                copiedData.titles[_.entryIndex].b = description
             if(_.fieldsModified)
                 copiedData.fields[_.entryIndex] = JSON.parse(tmpModel.toJson())
             // commit modification
@@ -110,6 +110,7 @@ Item {
                 username = _username
                 titlesModel.init(myData.titles)
                 dataPrepared = true
+                drawerList.currentIndex = 0
                 stack.clear()
                 stack.push(mainPage)
                 stack.forceActiveFocus()
@@ -133,8 +134,8 @@ Item {
         function addFinished(succeeded, data) {
             tip.setBusy(false)
             if(succeeded) {
-                titlesModel.append({"title": title, "description": description});
-                myData.titles.push({"title": title, "description": description})
+                titlesModel.append({"a": title, "b": description});
+                myData.titles.push({"a": title, "b": description})
                 myData.fields.push(JSON.parse(tmpModel.toJson()))
                 stack.pop()
                 tip.show(qsTr("Added"), "green")
@@ -146,12 +147,12 @@ Item {
             tip.setBusy(false)
             if(succeeded) {
                 if(titleModified){
-                    titlesModel.get(entryIndex).title = title
-                    myData.titles[entryIndex].title = title
+                    titlesModel.get(entryIndex).a = title
+                    myData.titles[entryIndex].a = title
                 }
                 if(descriptionModified){
-                    titlesModel.get(entryIndex).description = description
-                    myData.titles[entryIndex].description = description
+                    titlesModel.get(entryIndex).b = description
+                    myData.titles[entryIndex].b = description
                 }
                 if(fieldsModified)
                     myData.fields[entryIndex] = JSON.parse(tmpModel.toJson())

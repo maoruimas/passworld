@@ -25,14 +25,14 @@ MyPage {
             MyTextField {
                 id: titleInput
                 width: parent.width
-                text: titlesModel.get(entryIndex).title
+                text: titlesModel.get(entryIndex).a
                 showClearButton: true
             }
             MyLabel { text: qsTr("Description") }
             MyTextField {
                 id: descriptionInput
                 width: parent.width
-                text: titlesModel.get(entryIndex).description
+                text: titlesModel.get(entryIndex).b
                 showClearButton: true
             }
             Repeater {
@@ -43,7 +43,7 @@ MyPage {
                         width: parent.width
                         TextInput {
                             width: parent.width - dp(90)
-                            text: name
+                            text: a
                             color: dark ? "white" : "black"
                             clip: true
                             topPadding: dp(10)
@@ -57,7 +57,7 @@ MyPage {
                             font.family: "fontello"
                             flat: true
                             Material.foreground: Material.Blue
-                            onClicked: tmpModel.insert(index, {"name": "", "content": "", viewable: true})
+                            onClicked: tmpModel.insert(index, {"a": "", "b": "", "c": true})
                         }
                         Button {
                             width: dp(30)
@@ -65,7 +65,7 @@ MyPage {
                             font.family: "fontello"
                             flat: true
                             Material.foreground: Material.Blue
-                            onClicked: tmpModel.insert(index + 1, {"name": "", "content": "", viewable: true})
+                            onClicked: tmpModel.insert(index + 1, {"a": "", "b": "", "c": true})
                         }
                         Button {
                             width: dp(30)
@@ -78,11 +78,11 @@ MyPage {
                     }
                     MyTextField {
                         width: parent.width
-                        text: content
+                        text: b
                         passwordMode: true
-                        passwordVisible: viewable
-                        onPasswordVisibleChanged: viewable = passwordVisible
-                        onTextEdited: content = text
+                        passwordVisible: c
+                        onPasswordVisibleChanged: c = passwordVisible
+                        onTextEdited: b = text
                     }
                 }
             }

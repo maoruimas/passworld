@@ -4,61 +4,70 @@
 <context>
     <name>AccountPage</name>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="9"/>
+        <location filename="qml/pages/AccountPage.qml" line="8"/>
         <source>Account</source>
         <translation type="unfinished">账户</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="25"/>
-        <location filename="qml/pages/AccountPage.qml" line="61"/>
+        <location filename="qml/pages/AccountPage.qml" line="24"/>
+        <location filename="qml/pages/AccountPage.qml" line="88"/>
         <source>Change username</source>
         <translation type="unfinished">更改用户名</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="30"/>
-        <location filename="qml/pages/AccountPage.qml" line="90"/>
+        <location filename="qml/pages/AccountPage.qml" line="29"/>
+        <location filename="qml/pages/AccountPage.qml" line="117"/>
         <source>Change password</source>
         <translation type="unfinished">更改密码</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="35"/>
+        <location filename="qml/pages/AccountPage.qml" line="34"/>
         <source>Sign out</source>
         <translation type="unfinished">注销</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="41"/>
+        <location filename="qml/pages/AccountPage.qml" line="40"/>
         <source>Delete account</source>
         <translation type="unfinished">删除账户</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="50"/>
         <source>Delete account?</source>
-        <translation type="unfinished">是否删除账户？</translation>
+        <translation type="obsolete">是否删除账户？</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="52"/>
+        <location filename="qml/pages/AccountPage.qml" line="56"/>
         <source>Are you sure to delete your account?</source>
         <translation type="unfinished">您确定要删除账户吗？</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="53"/>
+        <location filename="qml/pages/AccountPage.qml" line="61"/>
         <source>This operation CANNOT be undone. Be cautious about your decision!</source>
         <translation type="unfinished">这一操作无法撤销，请谨慎决定！</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="63"/>
-        <location filename="qml/pages/AccountPage.qml" line="92"/>
+        <location filename="qml/pages/AccountPage.qml" line="70"/>
+        <source>Cancel</source>
+        <translation type="unfinished">取消</translation>
+    </message>
+    <message>
+        <location filename="qml/pages/AccountPage.qml" line="76"/>
+        <source>Confirm</source>
+        <translation type="unfinished">确认</translation>
+    </message>
+    <message>
+        <location filename="qml/pages/AccountPage.qml" line="90"/>
+        <location filename="qml/pages/AccountPage.qml" line="119"/>
         <source>Save</source>
         <translation type="unfinished">保存</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="70"/>
-        <location filename="qml/pages/AccountPage.qml" line="99"/>
+        <location filename="qml/pages/AccountPage.qml" line="97"/>
+        <location filename="qml/pages/AccountPage.qml" line="126"/>
         <source>Current password</source>
         <translation type="unfinished">当前密码</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="77"/>
+        <location filename="qml/pages/AccountPage.qml" line="104"/>
         <source>New username</source>
         <translation type="unfinished">新用户名</translation>
     </message>
@@ -67,12 +76,12 @@
         <translation type="obsolete">保存成功</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="106"/>
+        <location filename="qml/pages/AccountPage.qml" line="133"/>
         <source>New password</source>
         <translation type="unfinished">新密码</translation>
     </message>
     <message>
-        <location filename="qml/pages/AccountPage.qml" line="113"/>
+        <location filename="qml/pages/AccountPage.qml" line="140"/>
         <source>Confirm password</source>
         <translation type="unfinished">确认密码</translation>
     </message>
@@ -184,34 +193,44 @@
         <translation type="unfinished">注册</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="69"/>
+        <location filename="qml/pages/LandingPage.qml" line="68"/>
         <source>IP</source>
         <translation type="unfinished">地址</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="76"/>
+        <location filename="qml/pages/LandingPage.qml" line="75"/>
         <source>Port</source>
         <translation type="unfinished">端口</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="88"/>
+        <location filename="qml/pages/LandingPage.qml" line="87"/>
         <source>Dark theme</source>
         <translation type="unfinished">夜间模式</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="93"/>
+        <location filename="qml/pages/LandingPage.qml" line="92"/>
         <source>Light theme</source>
         <translation type="unfinished">日间模式</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="102"/>
+        <location filename="qml/pages/LandingPage.qml" line="110"/>
         <source>Cancel</source>
         <translation type="unfinished">取消</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="112"/>
+        <location filename="qml/pages/LandingPage.qml" line="120"/>
         <source>Confirm</source>
         <translation type="unfinished">确认</translation>
+    </message>
+    <message>
+        <location filename="qml/pages/LandingPage.qml" line="141"/>
+        <source>Passworld is a password manager applying AES algorithm. You need to set up a cloud server before using it. For more details, visit</source>
+        <translation type="unfinished">Passworld是使用AES算法的密码管理器。要使用本软件，您需要首先设置好自己的云服务器。详情请访问</translation>
+    </message>
+    <message>
+        <location filename="qml/pages/LandingPage.qml" line="150"/>
+        <source>or</source>
+        <translation type="unfinished">或</translation>
     </message>
 </context>
 <context>
@@ -227,22 +246,22 @@
         <translation type="unfinished">密码错误</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="117"/>
+        <location filename="qml/custom/Logic.qml" line="118"/>
         <source>Welcome, </source>
         <translation type="unfinished">欢迎，</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="128"/>
+        <location filename="qml/custom/Logic.qml" line="129"/>
         <source>Removed</source>
         <translation type="unfinished">删除成功</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="140"/>
+        <location filename="qml/custom/Logic.qml" line="141"/>
         <source>Added</source>
         <translation type="unfinished">添加成功</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="158"/>
+        <location filename="qml/custom/Logic.qml" line="159"/>
         <source>Edited</source>
         <translation type="unfinished">修改成功</translation>
     </message>
@@ -251,23 +270,23 @@
         <translation type="obsolete">保存成功</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="167"/>
+        <location filename="qml/custom/Logic.qml" line="168"/>
         <source>Username changed</source>
         <translation type="unfinished">用户名修改成功</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="176"/>
-        <location filename="qml/custom/Logic.qml" line="197"/>
+        <location filename="qml/custom/Logic.qml" line="177"/>
+        <location filename="qml/custom/Logic.qml" line="199"/>
         <source>Password changed</source>
         <translation type="unfinished">密码修改成功</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="185"/>
+        <location filename="qml/custom/Logic.qml" line="186"/>
         <source>Account deleted</source>
         <translation type="unfinished">账户删除成功</translation>
     </message>
     <message>
-        <location filename="qml/custom/Logic.qml" line="202"/>
+        <location filename="qml/custom/Logic.qml" line="204"/>
         <source>Refreshed</source>
         <translation type="unfinished">刷新成功</translation>
     </message>
@@ -373,12 +392,12 @@
 <context>
     <name>SearchPage</name>
     <message>
-        <location filename="qml/pages/SearchPage.qml" line="22"/>
+        <location filename="qml/pages/SearchPage.qml" line="24"/>
         <source>Search</source>
         <translation type="unfinished">搜索</translation>
     </message>
     <message>
-        <location filename="qml/pages/SearchPage.qml" line="72"/>
+        <location filename="qml/pages/SearchPage.qml" line="78"/>
         <source>No results</source>
         <translation type="unfinished">搜索无结果</translation>
     </message>

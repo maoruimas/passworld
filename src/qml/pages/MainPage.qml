@@ -43,6 +43,7 @@ MyPage {
             y: Math.min(minY-parent.verticalOvershoot, maxY)
             rotation: y*5
             width: 30; height: 30
+            Material.elevation: 50
             background: Rectangle {radius: parent.height/2}
             text: "\uE860"
             font.family: "fontello"
@@ -131,13 +132,13 @@ MyPage {
                 Label {
                     id: t1
                     width: parent.width
-                    text: title
+                    text: a
                     wrapMode: Text.WrapAnywhere
                 }
                 Label {
                     id: t2
                     width: text ? parent.width : 0
-                    text: description
+                    text: b
                     font.pixelSize: dp(16)
                     Material.foreground: Material.Grey
                     wrapMode: Text.WrapAnywhere

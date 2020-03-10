@@ -56,13 +56,13 @@ Page {
     Popup {
         id: settingsPopup
         anchors.centerIn: parent
+        contentWidth: body.width
         leftPadding: 20; rightPadding: 20; topPadding: 20; bottomPadding: 0
-        contentWidth: bodyColumnLayout.width
-        contentHeight: bodyColumn.height
         modal: true
+        closePolicy: Popup.NoAutoClose
         Column {
-            id: bodyColumn
-            width: parent.width
+            id: body
+            width: app.width-80
             GridLayout {
                 width: parent.width
                 columns: 2; rows: 2
@@ -96,8 +96,19 @@ Page {
                 }
             }
             Row {
-                anchors.horizontalCenter: parent.horizontalCenter
-                spacing: 10
+                anchors.right: parent.right
+                spacing: 5
+                RoundButton {
+                    text: "\uF29C"
+                    font.family: "fontello"
+                    flat: true
+                    onClicked: {
+                        settingsPopup.close()
+                        ipInput.text = hostName
+                        portInput.text = port
+                        infoPopup.open()
+                    }
+                }
                 Button {
                     text: qsTr("Cancel")
                     flat: true
@@ -118,6 +129,33 @@ Page {
                         settingsPopup.close()
                     }
                 }
+            }
+        }
+    }
+    Popup {
+        id: infoPopup
+        anchors.centerIn: parent
+        padding: 20
+        modal: true
+        Column {
+            width: app.width-80
+            Label {
+                width: parent.width
+                text: qsTr("Passworld is a password manager applying AES algorithm. You need to set up a cloud server before using it. For more details, visit")
+                wrapMode: Label.WrapAnywhere
+            }
+            Label {
+                width: parent.width
+                wrapMode: Label.WrapAnywhere
+                text: "<a href=\"https://gitee.com/maoruimas/passworld\">https://gitee.com/maoruimas/passworld</a>"
+                onLinkActivated: Qt.openUrlExternally("https://gitee.com/maoruimas/passworld")
+            }
+            Label { text: qsTr("or") }
+            Label {
+                width: parent.width
+                wrapMode: Label.WrapAnywhere
+                text: "<a href=\"https://github.com/maoruimas/passworld\">https://github.com/maoruimas/passworld</a>"
+                onLinkActivated: Qt.openUrlExternally("https://github.com/maoruimas/passworld")
             }
         }
     }

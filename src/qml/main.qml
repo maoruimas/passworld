@@ -133,6 +133,15 @@ ApplicationWindow {
             }
             ScrollBar.vertical: ScrollBar {}
         }
+        RoundButton {
+            x: drawer.width-width; y: drawer.height-height
+            text: dark ? "\uF185" : "\uF186"
+            font.family: "fontello"
+            Material.elevation: 1
+            Material.background: Material.Indigo
+            Material.foreground: "white"
+            onClicked: dark = !dark
+        }
     }
 
     LandingPage {

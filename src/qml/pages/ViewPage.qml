@@ -9,8 +9,8 @@ MyPage {
     property var entryIndex
 
     function updateViewPage() {
-        title = myData.titles[entryIndex].title
-        descriptionText.text = myData.titles[entryIndex].description
+        title = myData.titles[entryIndex].a
+        descriptionText.text = myData.titles[entryIndex].b
         fieldsModel.init(myData.fields[entryIndex])
     }
 
@@ -52,11 +52,11 @@ MyPage {
                         width: parent.width; height: 1
                         color: "lightgray"
                     }
-                    MyLabel { text: name }
+                    MyLabel { text: a }
                     ItemDelegate {
                         width: parent.width
-                        text: (viewable || root.viewable || content.length === 0) ? content : "●●●●●●"
-                        onPressAndHold: clipBoard.copy(content)
+                        text: (c || root.viewable || b.length === 0) ? b : "●●●●●●"
+                        onPressAndHold: clipBoard.copy(b)
                     }
                 }
             }

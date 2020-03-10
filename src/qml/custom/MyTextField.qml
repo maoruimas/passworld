@@ -7,7 +7,7 @@ TextField {
     property bool passwordVisible: false
     property string icon: ""
 
-    //bottomPadding: topPadding
+    selectByMouse: true
     // left
     Label {
         id: leftItem
