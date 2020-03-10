@@ -4,9 +4,11 @@ Passworld is a cross platform password manager written in Qt C++ and Qt Qml. By 
 
 Passworld is more reliable than other password managing applications in that it is open source and that data is stored on user's personal cloud server. In order to use Passworld, you should deploy MCloudServer on your server first(which takes no more than 20 minutes). Refer to [MCloudServer](https://gitee.com/maoruimas/mcloudserver) for more details.
 
-Developed under Qt 12, Passworld supports most platforms such as Windows(7, 10), Ios, Android(4.1 or above), Linux and so on. Check [Supported Platforms of Qt 5.12](https://doc.qt.io/qt-5.12/supported-platforms.html). Android and Windows packages are provided ![here](https://github.com/maoruimas/passworld/releases/tag/v0.3.0). However, you can compile source code for use on other platforms.
+Developed under Qt 12, Passworld supports most platforms such as Windows(7, 10), Ios, Android(4.1 or above), Linux and so on. Check [Supported Platforms of Qt 5.12](https://doc.qt.io/qt-5.12/supported-platforms.html). Android and Windows packages are provided [here](https://github.com/maoruimas/passworld/releases/tag/v0.3.0). However, you can compile source code for use on other platforms.
 
 Note that Passworld is still under development. For now, Passworld can only be used along with a cloud server.
+
+> This repository may not be up-to-date. The latest version can be found on [gitee](https://gitee.com/maoruimas/passworld).
 
 # Screenshots
 
