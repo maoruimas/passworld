@@ -8,7 +8,7 @@ MyPage {
     property bool viewable: false
     property var entryIndex
 
-    function updateViewPage() {
+    function update() {
         title = myData.titles[entryIndex].a
         descriptionText.text = myData.titles[entryIndex].b
         fieldsModel.init(myData.fields[entryIndex])
@@ -23,7 +23,7 @@ MyPage {
         ToolButton {
             text: "\uE82A"
             font.family: "fontello"
-            onClicked: stack.push(editPage)
+            onClicked: stack.push(editPage, {isAdd: false, entryIndex: entryIndex})
         }
     }
 
@@ -62,9 +62,5 @@ MyPage {
             }
         }
     }
-    Component {
-        id: editPage
-        EditPage {}
-    }
-    Component.onCompleted: updateViewPage()
+    Component.onCompleted: update()
 }

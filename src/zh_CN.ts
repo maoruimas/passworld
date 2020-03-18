@@ -89,38 +89,32 @@
 <context>
     <name>AddPage</name>
     <message>
-        <location filename="qml/pages/AddPage.qml" line="8"/>
         <source>Add</source>
-        <translation type="unfinished">编辑</translation>
+        <translation type="obsolete">编辑</translation>
     </message>
     <message>
-        <location filename="qml/pages/AddPage.qml" line="11"/>
         <source>Save</source>
-        <translation type="unfinished">保存</translation>
+        <translation type="obsolete">保存</translation>
     </message>
     <message>
         <source>Saved</source>
         <translation type="obsolete">保存成功</translation>
     </message>
     <message>
-        <location filename="qml/pages/AddPage.qml" line="24"/>
         <source>Title</source>
-        <translation type="unfinished">标题</translation>
+        <translation type="obsolete">标题</translation>
     </message>
     <message>
-        <location filename="qml/pages/AddPage.qml" line="30"/>
         <source>Description</source>
-        <translation type="unfinished">描述</translation>
+        <translation type="obsolete">描述</translation>
     </message>
     <message>
-        <location filename="qml/pages/AddPage.qml" line="88"/>
         <source>Username</source>
-        <translation type="unfinished">用户名</translation>
+        <translation type="obsolete">用户名</translation>
     </message>
     <message>
-        <location filename="qml/pages/AddPage.qml" line="88"/>
         <source>Password</source>
-        <translation type="unfinished">密码</translation>
+        <translation type="obsolete">密码</translation>
     </message>
 </context>
 <context>
@@ -144,6 +138,16 @@
         <translation type="unfinished">保存</translation>
     </message>
     <message>
+        <location filename="qml/pages/EditPage.qml" line="99"/>
+        <source>Username</source>
+        <translation type="unfinished">用户名</translation>
+    </message>
+    <message>
+        <location filename="qml/pages/EditPage.qml" line="99"/>
+        <source>Password</source>
+        <translation type="unfinished">密码</translation>
+    </message>
+    <message>
         <source>Saved</source>
         <translation type="obsolete">保存成功</translation>
     </message>
@@ -152,12 +156,12 @@
         <translation type="obsolete">没有检测到更改</translation>
     </message>
     <message>
-        <location filename="qml/pages/EditPage.qml" line="24"/>
+        <location filename="qml/pages/EditPage.qml" line="30"/>
         <source>Title</source>
         <translation type="unfinished">标题</translation>
     </message>
     <message>
-        <location filename="qml/pages/EditPage.qml" line="31"/>
+        <location filename="qml/pages/EditPage.qml" line="37"/>
         <source>Description</source>
         <translation type="unfinished">描述</translation>
     </message>
@@ -193,42 +197,42 @@
         <translation type="unfinished">注册</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="68"/>
+        <location filename="qml/pages/LandingPage.qml" line="69"/>
         <source>IP</source>
         <translation type="unfinished">地址</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="75"/>
+        <location filename="qml/pages/LandingPage.qml" line="76"/>
         <source>Port</source>
         <translation type="unfinished">端口</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="87"/>
+        <location filename="qml/pages/LandingPage.qml" line="88"/>
         <source>Dark theme</source>
         <translation type="unfinished">夜间模式</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="92"/>
+        <location filename="qml/pages/LandingPage.qml" line="93"/>
         <source>Light theme</source>
         <translation type="unfinished">日间模式</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="110"/>
+        <location filename="qml/pages/LandingPage.qml" line="113"/>
         <source>Cancel</source>
         <translation type="unfinished">取消</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="120"/>
+        <location filename="qml/pages/LandingPage.qml" line="123"/>
         <source>Confirm</source>
         <translation type="unfinished">确认</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="141"/>
+        <location filename="qml/pages/LandingPage.qml" line="144"/>
         <source>Passworld is a password manager applying AES algorithm. You need to set up a cloud server before using it. For more details, visit</source>
         <translation type="unfinished">Passworld是使用AES算法的密码管理器。要使用本软件，您需要首先设置好自己的云服务器。详情请访问</translation>
     </message>
     <message>
-        <location filename="qml/pages/LandingPage.qml" line="150"/>
+        <location filename="qml/pages/LandingPage.qml" line="153"/>
         <source>or</source>
         <translation type="unfinished">或</translation>
     </message>
@@ -306,7 +310,7 @@
 <context>
     <name>MyPage</name>
     <message>
-        <location filename="qml/custom/MyPage.qml" line="40"/>
+        <location filename="qml/custom/MyPage.qml" line="41"/>
         <source>Click again to quit</source>
         <translation type="unfinished">再按一次退出</translation>
     </message>
@@ -413,83 +417,83 @@
 <context>
     <name>Worker</name>
     <message>
-        <location filename="worker.cpp" line="21"/>
-        <location filename="worker.cpp" line="32"/>
+        <location filename="worker.cpp" line="26"/>
+        <location filename="worker.cpp" line="37"/>
         <source>Username and password should be nonempty</source>
         <translation type="unfinished">用户名或密码不得留空</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="42"/>
+        <location filename="worker.cpp" line="47"/>
         <source>User exists</source>
         <translation type="unfinished">用户已存在</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="44"/>
-        <location filename="worker.cpp" line="57"/>
+        <location filename="worker.cpp" line="49"/>
+        <location filename="worker.cpp" line="62"/>
         <source>Network error</source>
         <translation type="unfinished">网络错误</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="55"/>
+        <location filename="worker.cpp" line="60"/>
         <source>User not exists</source>
         <translation type="unfinished">用户不存在</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="63"/>
-        <location filename="worker.cpp" line="77"/>
+        <location filename="worker.cpp" line="68"/>
+        <location filename="worker.cpp" line="82"/>
         <source>Fail to access file</source>
         <translation type="unfinished">无法访问文件</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="89"/>
+        <location filename="worker.cpp" line="94"/>
         <source>Fail to save due to rejection</source>
         <translation type="unfinished">服务器拒绝，保存失败</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="91"/>
+        <location filename="worker.cpp" line="96"/>
         <source>Fail to save due to network error</source>
         <translation type="unfinished">网络错误，保存失败</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="97"/>
-        <location filename="worker.cpp" line="126"/>
+        <location filename="worker.cpp" line="102"/>
+        <location filename="worker.cpp" line="131"/>
         <source>Wrong password</source>
         <translation type="unfinished">密码错误</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="99"/>
+        <location filename="worker.cpp" line="104"/>
         <source>Username should be nonempty</source>
         <translation type="unfinished">用户名不得留空</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="101"/>
+        <location filename="worker.cpp" line="106"/>
         <source>Username not changed</source>
         <translation type="unfinished">用户名没有改变</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="115"/>
-        <location filename="worker.cpp" line="149"/>
+        <location filename="worker.cpp" line="120"/>
+        <location filename="worker.cpp" line="154"/>
         <source>Fail to remove local file</source>
         <translation type="unfinished">无法删除本地文件</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="117"/>
-        <location filename="worker.cpp" line="151"/>
+        <location filename="worker.cpp" line="122"/>
+        <location filename="worker.cpp" line="156"/>
         <source>Fail to remove file on server</source>
         <translation type="unfinished">无法删除服务器上的文件</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="119"/>
+        <location filename="worker.cpp" line="124"/>
         <source>User exists or network error</source>
         <translation type="unfinished">用户已存在或网络错误</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="128"/>
+        <location filename="worker.cpp" line="133"/>
         <source>Password should be nonempty</source>
         <translation type="unfinished">密码不得留空</translation>
     </message>
     <message>
-        <location filename="worker.cpp" line="130"/>
+        <location filename="worker.cpp" line="135"/>
         <source>Password not changed</source>
         <translation type="unfinished">密码没有改变</translation>
     </message>
@@ -502,12 +506,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="qml/main.qml" line="113"/>
+        <location filename="qml/main.qml" line="119"/>
         <source>Password</source>
         <translation type="unfinished">密码</translation>
     </message>
     <message>
-        <location filename="qml/main.qml" line="114"/>
+        <location filename="qml/main.qml" line="120"/>
         <source>Account</source>
         <translation type="unfinished">账户</translation>
     </message>

@@ -23,8 +23,12 @@ MyPage {
             text: "\uE810"
             font.family: "fontello"
             enabled: dataPrepared
-            onClicked: stack.push(addPage)
+            onClicked: stack.push(editPage, {isAdd: true})
         }
+    }
+
+    function update() {
+        listView.contentY = listView._contentY
     }
 
     ListView {
@@ -34,6 +38,7 @@ MyPage {
         boundsBehavior: Flickable.DragOverBounds
         boundsMovement: Flickable.StopAtBounds
         //pressDelay: 100
+        property int _contentY
 
         Label {
             id: busyLabel
@@ -108,7 +113,10 @@ MyPage {
             width: parent.width
             height: implicitContentHeight+2*topPadding
             topPadding: 12; bottomPadding: topPadding
-            onClicked: stack.push(viewPage, {entryIndex: index})
+            onClicked: {
+                listView._contentY = listView.contentY
+                stack.push(viewPage, {entryIndex: index})
+            }
             ListView.onRemove: SequentialAnimation {
                 PropertyAction {
                     target: swipeDelegate

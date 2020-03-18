@@ -8,9 +8,15 @@ MyPage {
     title: qsTr("Edit")
     rightBarItem: ToolButton {
         text: qsTr("Save")
-        onClicked: logic.edit(entryIndex, titleInput.text, descriptionInput.text)
+        onClicked: {
+            if(isAdd)
+                logic.add(titleInput.text, descriptionInput.text)
+            else
+                logic.edit(entryIndex, titleInput.text, descriptionInput.text)
+        }
     }
-    onBackButtonClicked: updateViewPage()
+    property bool isAdd
+    property int entryIndex
 
     Flickable {
         anchors.fill: parent
@@ -25,14 +31,14 @@ MyPage {
             MyTextField {
                 id: titleInput
                 width: parent.width
-                text: titlesModel.get(entryIndex).a
+                text: isAdd ? "" : titlesModel.get(entryIndex).a
                 showClearButton: true
             }
             MyLabel { text: qsTr("Description") }
             MyTextField {
                 id: descriptionInput
                 width: parent.width
-                text: titlesModel.get(entryIndex).b
+                text: isAdd ? "" : titlesModel.get(entryIndex).b
                 showClearButton: true
             }
             Repeater {
@@ -49,7 +55,7 @@ MyPage {
                             topPadding: dp(10)
                             bottomPadding: dp(10)
                             font { pixelSize: dp(20); bold: true }
-                            onTextEdited: name = text
+                            onTextEdited: a = text
                         }
                         Button {
                             width: dp(30)
@@ -88,5 +94,10 @@ MyPage {
             }
         }
     }
-    Component.onCompleted: tmpModel.init(myData.fields[entryIndex])
+    Component.onCompleted: {
+        if(isAdd)
+            tmpModel.init([{"a": qsTr("Username"), "b": "", "c": true}, {"a": qsTr("Password"), "b": "", "c": false}])
+        else
+            tmpModel.init(myData.fields[entryIndex])
+    }
 }

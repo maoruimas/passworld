@@ -16,7 +16,7 @@ Page {
                     font.family: "fontello"
                     onClicked: {
                         backButtonClicked()
-                        stack.pop()
+                        stack.popAndUpdate()
                     }
                 }
             }
@@ -30,9 +30,10 @@ Page {
         }
     }
     Keys.onBackPressed: {
-        if(stack.depth > 1)
-            stack.pop()
-        else if(stack.depth === 1){
+        if(stack.depth > 1) {
+            backButtonClicked()
+            stack.popAndUpdate()
+        }else if(stack.depth === 1){
             if(tip.isQuit)
                 Qt.quit()
             else{

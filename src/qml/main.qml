@@ -43,6 +43,12 @@ ApplicationWindow {
         id: stack
         anchors.fill: parent
         initialItem: mainPage
+        function popAndUpdate() {
+            var beneath = stack.get(depth-2)
+            if(beneath)
+                beneath.update()
+            stack.pop()
+        }
         pushEnter: Transition {
             ParallelAnimation {
                 NumberAnimation {
@@ -173,8 +179,8 @@ ApplicationWindow {
         ViewPage {}
     }
     Component {
-        id: addPage
-        AddPage {}
+        id: editPage
+        EditPage {}
     }
     Component {
         id: accountPage
